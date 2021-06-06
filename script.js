@@ -25,7 +25,7 @@ var timeBlockColor = function() {
             console.log(blockHour + " past");
         }
     })
-}
+};
 
 var renderPage = function() {
     count = items[items.length -1 ].count + 1;
@@ -63,7 +63,7 @@ var renderPage = function() {
             break;
         }
     }
-}
+};
 
 var loadPage = function() {
     timeBlockColor();
@@ -77,7 +77,7 @@ var loadPage = function() {
         }
         renderPage();
     }
-}
+};
 
 var saveItem = function() {
     var hourSaved = $(this).parent().attr("hour");
@@ -93,7 +93,12 @@ var saveItem = function() {
     count++;
     console.log(items);
     localStorage.setItem("items", JSON.stringify(items));
-}
+};
+
+setInterval(function () {
+    console.log("5 seconds")
+    location.reload();
+  }, 1800000);
 
 $(".time-block").on("click", "button", saveItem);
 
