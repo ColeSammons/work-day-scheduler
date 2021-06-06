@@ -7,12 +7,6 @@ var currentDate = moment().format("dddd, MMMM Do");
 var currentHour = parseInt(moment().format("H"));
 console.log("current hour:" + currentHour);
 
-
-// var currentDate = function() {
-//     var current = moment().format("dddd, MMMM Do");
-//     $("#currentDay").text(current);
-// }
-
 var timeBlockColor = function() {
     timeBlockEl.each(function() {
         var timeBlock = $(this);
