@@ -57,6 +57,12 @@ textarea{
   color: white;
 }
 
+.flex-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
